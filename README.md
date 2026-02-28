@@ -6,23 +6,22 @@
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: MindMates
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Khushi - TKM College Of Engineering
+- Member 2: Nisthula M - TKM College of Engineering
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
-
+SafeHer is a full-stack web application designed to enhance personal safety through intelligent route analysis and community-driven area reporting. It integrates Google Maps, real-time safety reviews, to help users navigate safer path
 ### The Problem statement
-[What problem are you solving?]
+Many individuals, especially women, face uncertainty and safety risks while navigating unfamiliar areas. Traditional map applications focus only on shortest or fastest routes, without considering real-time safety conditions or community-reported risks
 
 ### The Solution
-[How are you solving it?]
+SafeHer combines real-time location tracking, community safety reports, and intelligent route analysis to dynamically assess and color-code routes based on safety levels. By integrating user-submitted reviews and automated route evaluation, the platform helps users make safer travel decisions proactively.
 
 ---
 
@@ -31,26 +30,30 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: javascript,HTML5,CSS
+- Frameworks used: React Js,Node Js,Express js
+- Libraries used: Google maps API,React routern DOM, Mongoose DB,JSon,bcrypt,dotenv,Lucid React
+- Tools used: VS code,Git &Github,MongoDB Atlas,nodemon,google cloud console
 
 **For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Main components: laptop/desktop system,internet connectivity
+- Specifications: Min 8GB RAM,Node.Js,web browser
+- Tools required: code editor,Git installed,Node Js installed, MongoDB Atlas,Google cloud Account
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- User Authentication & Authorization: SafeHer provides secure user registration and login using JWT-based authentication. Passwords are securely hashed before storage. Protected routes ensure that only authenticated users can access core features like safety reporting and route analysis.
+- Real-Time Safe Map Integration:The application integrates Google Maps to display real-time user location. Users can generate routes to a selected destination, and the system visually displays these routes directly on the map interface.
 
+- Dynamic Safety-Based Route Coloring:Routes dynamically change color based on community-reported safety data,The system analyzes reported unsafe coordinates along the route path to determine safety level.
+- Area Safety Reporting System: The application uses browser geolocation APIs to detect the user’s current coordinates. Reverse geocoding converts latitude and longitude into a human-readable address automatically.
+-Trusted Contacts Management:Users can securely add and manage trusted contacts. These contacts are stored in the database and can be extended for emergency notifications or SOS alerts.
+-Live Safety Zones Display:The Safe Map page displays nearby safety zones with safety scores, lighting conditions, crowd density, and alert indicators to provide users with situational awareness.
+-Emergency & SOS Framework:The backend supports emergency logging and can be extended to trigger real-time alerts, notifications, or location sharing with trusted contacts.
+-Community-Driven Safety Intelligence:The system relies on collective user input to create a dynamic safety ecosystem. Community-reported incidents influence route recommendations and visual safety indicators.
 ---
 
 ## Implementation
@@ -59,18 +62,19 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+npm install,google@map_api install,npm install express
+
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+npm start,npm run dev
 ```
 
 ### For Hardware:
 
 #### Components Required
-[List all components needed with specifications]
+
 
 #### Circuit Setup
 [Explain how to set up the circuit]
@@ -83,26 +87,25 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+https://drive.google.com/drive/folders/1rM8HFWpklty3aVO1VNpoluwI5E3u1JNA?usp=drive_link[home]
+The home page that including navigations and showcasing feature cards
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+https://drive.google.com/drive/folders/1rM8HFWpklty3aVO1VNpoluwI5E3u1JNA?usp=drive_link[safemap]
+Shows realtime map and routes according to safety measure .This page also deals with the review section from the user.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+https://drive.google.com/drive/folders/1rM8HFWpklty3aVO1VNpoluwI5E3u1JNA?usp=drive_link[features]
+gives access to dedicated feature pages
 
 #### Diagrams
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
 *Explain your system architecture - components, data flow, tech stack interaction*
 
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+https://drive.google.com/drive/folders/1rM8HFWpklty3aVO1VNpoluwI5E3u1JNA?usp=drive_link
+SafeHer follows a three-tier architecture consisting of the Presentation Layer (Frontend), Application Layer (Backend), and Data Layer (Database). Each layer has a specific responsibility and communicates securely with the others.
 
 ---
 
@@ -136,13 +139,14 @@ List the key features of your project:
 ### For Web Projects with Backend:
 
 #### API Documentation
+google maps API
 
 **Base URL:** `https://api.yourproject.com`
 
 ##### Endpoints
 
 **GET /api/endpoint**
-- **Description:** [What it does]
+- **Description:** gets feasible reach to the maps
 - **Parameters:**
   - `param1` (string): [Description]
   - `param2` (integer): [Description]
@@ -361,9 +365,8 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
-
-*Explain what the video demonstrates - key features, user flow, technical highlights*
+https://drive.google.com/drive/folders/1rM8HFWpklty3aVO1VNpoluwI5E3u1JNA?usp=drive_link
+it covers the features such as safemap,emergency sos,company review,trusted networks.
 
 ### Additional Demos
 [Add any extra demo materials/links - Live site, APK download, online demo, etc.]
@@ -372,25 +375,25 @@ python script.py -v --format json data.json
 
 ## AI Tools Used (Optional - For Transparency Bonus)
 
-If you used AI tools during development, document them here for transparency:
+chatgpt-openAI
 
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
+**Tool Used:**  GitHub Copilot, ChatGPT
 
 **Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
+
+- Debugging assistance for async functions
+- Code review and optimization suggestions
 
 **Key Prompts Used:**
-- "Create a REST API endpoint for user authentication"
-- "Debug this async function that's causing race conditions"
-- "Optimize this database query for better performance"
+- Give steps how to use google API
+- Debug this async function that's causing error
+- Optimize this database query
 
-**Percentage of AI-generated code:** [Approximately X%]
+**Percentage of AI-generated code:** 
 
 **Human Contributions:**
-- Architecture design and planning
-- Custom business logic implementation
+- Flowchart design and planning
+- Custom idea implementatio
 - Integration and testing
 - UI/UX design decisions
 
@@ -400,9 +403,8 @@ If you used AI tools during development, document them here for transparency:
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
+- Khushi: Frontend, Backend
+- Nisthula: Backend connection, API
 
 ---
 
